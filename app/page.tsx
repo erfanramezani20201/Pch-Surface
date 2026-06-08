@@ -134,16 +134,16 @@ export default function Home() {
           We Detail
         </p>
 
-        <div className="grid grid-cols-2 gap-x-24 gap-y-6 text-5xl font-bold leading-none tracking-tight md:text-7xl">
-          <p>Cars</p>
-          <p>Luxury</p>
-          <p>Trucks</p>
-          <p>Exotic</p>
-          <p>SUVs</p>
-          <p>Commercial</p>
-          <p>RVs</p>
-          <p className="text-zinc-400">Aircraft Coming Soon</p>
-        </div>
+        <div className="grid grid-cols-1 gap-y-6 text-4xl font-bold leading-none tracking-tight md:grid-cols-2 md:gap-x-24 md:text-7xl">
+  <p>Cars</p>
+  <p>Luxury</p>
+  <p>Trucks</p>
+  <p>Exotic</p>
+  <p>SUVs</p>
+  <p>Commercial</p>
+  <p>RVs</p>
+  <p className="text-zinc-400">Aircraft Coming Soon</p>
+</div>
       </motion.section>
 
       <motion.section
