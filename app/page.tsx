@@ -68,7 +68,7 @@ export default function Home() {
           variants={fadeUp}
           initial="hidden"
           animate="show"
-          className="relative z-10 max-w-xl -mt-16"
+          className="relative z-10 max-w-xl mt-12 md:-mt-16"
         >
           <p className="mb-4 text-xs font-bold uppercase tracking-[0.35em] text-orange-500">
             Premium Mobile Detailing
