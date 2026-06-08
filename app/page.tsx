@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { motion } from "framer-motion";
+import { motion, type Variants } from "framer-motion";
 
 const phone = "9493399149";
 const email = "pchsurface.collc@gmail.com";
@@ -10,26 +10,26 @@ const instagram = "https://instagram.com/pchsurface";
 const quoteLink =
   "mailto:pchsurface.collc@gmail.com?subject=Booking%20Request%20-%20PCH%20Surface&body=Hi%20PCH%20Surface%2C%0A%0AI%20want%20to%20get%20a%20quote.%0A%0AName%3A%0APhone%3A%0AVehicle%3A%0ALocation%3A%0AService%20needed%3A";
 
-const fadeUp = {
+const fadeUp: Variants = {
   hidden: { opacity: 0, y: 40 },
   show: {
     opacity: 1,
     y: 0,
     transition: {
       duration: 0.8,
-      ease: [0.22, 1, 0.36, 1],
+      ease: "easeOut",
     },
   },
 };
 
-const fadeIn = {
+const fadeIn: Variants = {
   hidden: { opacity: 0 },
   show: {
     opacity: 1,
     transition: {
       duration: 1,
-      ease: [0.22, 1, 0.36, 1],
-        },
+      ease: "easeOut",
+    },
   },
 };
 
@@ -137,13 +137,10 @@ export default function Home() {
         <div className="grid grid-cols-2 gap-x-24 gap-y-6 text-5xl font-bold leading-none tracking-tight md:text-7xl">
           <p>Cars</p>
           <p>Luxury</p>
-
           <p>Trucks</p>
           <p>Exotic</p>
-
           <p>SUVs</p>
           <p>Commercial</p>
-
           <p>RVs</p>
           <p className="text-zinc-400">Aircraft Coming Soon</p>
         </div>
